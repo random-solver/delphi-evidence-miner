@@ -1,0 +1,368 @@
+{
+  "generated_at": "2026-11-26T14:09:44Z",
+  "market": {
+    "address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+    "question": "Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?",
+    "delphi_url": "https://delphi.fyi/market/a47fa3b7-d426-49c8-af9a-2a1bd70a5bf1",
+    "category": "votes_government",
+    "category_label": "Votes and government",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.515014,
+      "no": 0.484986
+    },
+    "closes_at": "2026-12-09T05:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-08T05:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes\": Wins if Thomas Aeschi (SVP) is confirmed as elected to the Swiss Federal Council by the Federal Assembly, succeeding Guy Parmelin, in the election held on December 9, 2026, with the result announced strictly after 2026-11-24T09:57:51.224Z and at or before 2026-12-09T13:00:00.000Z.\n- \"No\": Wins if the Federal Assembly holds its Federal Council election on December 9, 2026, within the same window, and Thomas Aeschi is not elected to the seat vacated by Guy Parmelin.\n\nClarifications:\n- The election session in question is the Federal Assembly's by-election on December 9, 2026, to fill the seat vacated by Guy Parmelin's departure from the Federal Council. Election results are determined by the official vote count announced by the Federal Assembly on that date.",
+    "data_sources": [
+      "https://www.parlament.ch",
+      "https://www.bk.admin.ch",
+      "https://www.reuters.com"
+    ],
+    "settled": null
+  },
+  "decomposition": {
+    "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+    "question": "Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?",
+    "entities": [
+      "Thomas Aeschi",
+      "SVP",
+      "Swiss Council",
+      "Assembly",
+      "Guy Parmelin"
+    ],
+    "thresholds": [],
+    "window_start": "2026-11-24T09:57:51.224Z",
+    "window_end": "2026-12-09T13:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-08T05:00:00.000Z",
+    "sub_claims": [
+      {
+        "claim_id": "C1-primary-outcome",
+        "predicate": "Primary outcome verification: determine whether evidence indicates YES or NO for 'Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?' (thresholds: binary outcome condition).",
+        "claim_type": "primary_outcome",
+        "target_entities": [
+          "Thomas Aeschi",
+          "SVP",
+          "Swiss Council",
+          "Assembly",
+          "Guy Parmelin"
+        ],
+        "keywords": [
+          "thomas",
+          "aeschi",
+          "svp",
+          "swiss",
+          "council",
+          "assembly",
+          "guy",
+          "parmelin"
+        ],
+        "target_domains": [
+          "parlament.ch",
+          "bk.admin.ch",
+          "reuters.com"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C2-official-source",
+        "predicate": "Designated resolution source check across ['parlament.ch', 'bk.admin.ch', 'reuters.com'] for official notices/releases inside window [2026-11-24T09:57:51.224Z .. 2026-12-09T13:00:00.000Z].",
+        "claim_type": "official_source_check",
+        "target_entities": [
+          "Thomas Aeschi",
+          "SVP",
+          "Swiss Council",
+          "Assembly"
+        ],
+        "keywords": [
+          "thomas",
+          "aeschi",
+          "svp",
+          "swiss",
+          "council",
+          "assembly",
+          "official",
+          "press",
+          "release",
+          "result"
+        ],
+        "target_domains": [
+          "parlament.ch",
+          "bk.admin.ch",
+          "reuters.com"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C3-leading-indicator",
+        "predicate": "Leading indicator / pre-release check: polls, regional/preliminary prints, ballot/tracker status, standings, or technical commits tied to Thomas Aeschi, SVP, Swiss Council, Assembly.",
+        "claim_type": "leading_indicator",
+        "target_entities": [
+          "Thomas Aeschi",
+          "SVP",
+          "Swiss Council",
+          "Assembly",
+          "Guy Parmelin"
+        ],
+        "keywords": [
+          "thomas",
+          "aeschi",
+          "svp",
+          "swiss",
+          "council",
+          "assembly",
+          "guy",
+          "parmelin",
+          "preliminary",
+          "poll",
+          "estimate",
+          "forecast",
+          "update"
+        ],
+        "target_domains": [
+          "parlament.ch",
+          "bk.admin.ch",
+          "reuters.com"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C4-criteria-edge-guard",
+        "predicate": "Resolution criteria edge-case guard: verify exact metric definition (preliminary vs final, valid+blank ballots, single vs double majority, UTC cutoff).",
+        "claim_type": "edge_guard",
+        "target_entities": [
+          "Thomas Aeschi",
+          "SVP",
+          "Swiss Council"
+        ],
+        "keywords": [
+          "thomas",
+          "aeschi",
+          "svp",
+          "swiss",
+          "council"
+        ],
+        "target_domains": [
+          "parlament.ch",
+          "bk.admin.ch",
+          "reuters.com"
+        ],
+        "expected_direction": "neutral"
+      }
+    ],
+    "suggested_queries": [
+      "Thomas Aeschi SVP Swiss Council",
+      "thomas aeschi svp swiss"
+    ],
+    "target_domains": [
+      "parlament.ch",
+      "bk.admin.ch",
+      "reuters.com"
+    ]
+  },
+  "corroboration": {
+    "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+    "prior_yes_odds": 0.515014,
+    "implied_yes_probability": 0.515014,
+    "delta_from_market": 0.0,
+    "recommended_stance": "NEUTRAL_CONTEXT",
+    "corroboration_score": 0.0,
+    "contradiction_index": 0.0,
+    "supporting_yes_weight": 0.0,
+    "supporting_no_weight": 0.0,
+    "neutral_weight": 0.414,
+    "distinct_domains_count": 2,
+    "total_signals": 4,
+    "passes_submission_threshold": false,
+    "assessment_summary": "Fetched 4 signal(s) across 2 domain(s); no decisive directional shift over market baseline yet."
+  },
+  "signals": [
+    {
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "title": "2026 Swiss Federal Council election",
+      "published_at": "2026-11-25T19:42:38Z",
+      "fetched_at": "2026-11-26T14:09:41Z",
+      "content_sha256": "5a0a3ff9abdc868919a67ca2589f977f7438de82135ac2321af9455eb59538a9",
+      "stance": "NEUTRAL_CONTEXT",
+      "relevance_score": 0.9,
+      "authority_weight": 0.75,
+      "recency_score": 1.0,
+      "confidence": 0.27,
+      "matched_terms": [
+        "SVP",
+        "Guy Parmelin",
+        "svp",
+        "swiss",
+        "council",
+        "guy",
+        "parmelin"
+      ],
+      "extracted_numbers": [],
+      "excerpt": "The announcement of President Guy Parmelin's resignation from the Federal Council on 2 October, effective on 31 December, triggered a by-election that will take place on 9 December 2026.",
+      "rationale": "Informational context without decisive directional threshold or polarity signal."
+    },
+    {
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/Thomas_Aeschi",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "title": "Thomas Aeschi",
+      "published_at": "2026-11-22T21:20:12Z",
+      "fetched_at": "2026-11-26T14:09:41Z",
+      "content_sha256": "990059914023724090a7c3ce351690648652ca697563364defd391dbb7a82b09",
+      "stance": "NEUTRAL_CONTEXT",
+      "relevance_score": 0.8,
+      "authority_weight": 0.75,
+      "recency_score": 0.75,
+      "confidence": 0.18,
+      "matched_terms": [
+        "Thomas Aeschi",
+        "thomas",
+        "aeschi",
+        "swiss",
+        "council"
+      ],
+      "extracted_numbers": [],
+      "excerpt": "Thomas Aeschi is a Swiss businessman, politician and former banker.",
+      "rationale": "Informational context without decisive directional threshold or polarity signal."
+    },
+    {
+      "claim_id": "C2-official-source",
+      "source_url": "https://www.parlament.ch/de",
+      "domain": "parlament.ch",
+      "source_type": "web_html",
+      "title": "Schweizer Parlament - Startseite",
+      "published_at": null,
+      "fetched_at": "2026-11-26T14:09:33Z",
+      "content_sha256": "2fb82bc31682060b166626b18da7351ae368177bbe09d1a0fe21e3535e7b10e5",
+      "stance": "NEUTRAL_CONTEXT",
+      "relevance_score": 0.6,
+      "authority_weight": 1.0,
+      "recency_score": 0.6,
+      "confidence": 0.144,
+      "matched_terms": [
+        "SVP",
+        "Guy Parmelin",
+        "svp",
+        "council",
+        "guy",
+        "parmelin"
+      ],
+      "extracted_numbers": [],
+      "excerpt": "Ratsmitglieder seit 1848",
+      "rationale": "Informational context without decisive directional threshold or polarity signal."
+    },
+    {
+      "claim_id": "C2-official-source",
+      "source_url": "https://www.bk.admin.ch/de",
+      "domain": "bk.admin.ch",
+      "source_type": "web_html",
+      "title": "Die Bundeskanzlei BK",
+      "published_at": null,
+      "fetched_at": "2026-11-26T14:09:38Z",
+      "content_sha256": "8072c73ace5a4fe819f71832961a8d61eca54119bf39bf8f21dcda35e7832c6d",
+      "stance": "NEUTRAL_CONTEXT",
+      "relevance_score": 0.1,
+      "authority_weight": 1.0,
+      "recency_score": 0.6,
+      "confidence": 0.024,
+      "matched_terms": [
+        "press"
+      ],
+      "extracted_numbers": [],
+      "excerpt": "Viktor Rossi (GLP) leitet die Bundeskanzlei seit 2024.",
+      "rationale": "Low term overlap with market entities/keywords."
+    }
+  ],
+  "provenance_records": [
+    {
+      "record_id": 8,
+      "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "http_status": 200,
+      "content_sha256": "5a0a3ff9abdc868919a67ca2589f977f7438de82135ac2321af9455eb59538a9",
+      "published_at": "2026-11-25T19:42:38Z",
+      "fetched_at": "2026-11-26T14:09:41Z",
+      "stance": "NEUTRAL_CONTEXT",
+      "confidence": 0.27,
+      "excerpt": "The announcement of President Guy Parmelin's resignation from the Federal Council on 2 October, effective on 31 December, triggered a by-election that will take place on 9 December 2026.",
+      "record_hash": "d2184ec6ac162664886233ea3f4f25c191520a41bf77386683e71e6116cbc2e8"
+    },
+    {
+      "record_id": 9,
+      "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/Thomas_Aeschi",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "http_status": 200,
+      "content_sha256": "990059914023724090a7c3ce351690648652ca697563364defd391dbb7a82b09",
+      "published_at": "2026-11-22T21:20:12Z",
+      "fetched_at": "2026-11-26T14:09:41Z",
+      "stance": "NEUTRAL_CONTEXT",
+      "confidence": 0.18,
+      "excerpt": "Thomas Aeschi is a Swiss businessman, politician and former banker.",
+      "record_hash": "b000ab9fbee26c26b4be13f5e4e1746d582c13413fabc0d42190d9fe81b6c54f"
+    },
+    {
+      "record_id": 10,
+      "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+      "claim_id": "C2-official-source",
+      "source_url": "https://www.parlament.ch/de",
+      "domain": "parlament.ch",
+      "source_type": "web_html",
+      "http_status": 200,
+      "content_sha256": "2fb82bc31682060b166626b18da7351ae368177bbe09d1a0fe21e3535e7b10e5",
+      "published_at": null,
+      "fetched_at": "2026-11-26T14:09:33Z",
+      "stance": "NEUTRAL_CONTEXT",
+      "confidence": 0.144,
+      "excerpt": "Ratsmitglieder seit 1848",
+      "record_hash": "a3b572c5b7466d7f906c31b867f9ef888f4723788e6e54e14f37a6a65366e10a"
+    },
+    {
+      "record_id": 11,
+      "market_address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+      "claim_id": "C2-official-source",
+      "source_url": "https://www.bk.admin.ch/de",
+      "domain": "bk.admin.ch",
+      "source_type": "web_html",
+      "http_status": 200,
+      "content_sha256": "8072c73ace5a4fe819f71832961a8d61eca54119bf39bf8f21dcda35e7832c6d",
+      "published_at": null,
+      "fetched_at": "2026-11-26T14:09:38Z",
+      "stance": "NEUTRAL_CONTEXT",
+      "confidence": 0.024,
+      "excerpt": "Viktor Rossi (GLP) leitet die Bundeskanzlei seit 2024.",
+      "record_hash": "d8cc57f3b87596ea41b8c6ffafb1fd0a8a9ebbc7e7d73e5a13911dc80b994cf1"
+    }
+  ],
+  "submission_note": "Market: Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?\nAssessment: NEUTRAL_CONTEXT | Prior YES=51.5% -> Implied YES=51.5% (Corroboration=0.00, Contradiction=0.00)\n\nDated Verifiable Evidence:\n1. [NEUTRAL_CONTEXT | conf=0.27 | 2026-11-25T19:42:38Z] 2026 Swiss Federal Council election\n   Excerpt: The announcement of President Guy Parmelin's resignation from the Federal Council on 2 October, effective on 31 December, triggered a by-election that will take place on 9 December 2026.\n   Source: https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election (sha256:5a0a3ff9abdc8689)\n2. [NEUTRAL_CONTEXT | conf=0.18 | 2026-11-22T21:20:12Z] Thomas Aeschi\n   Excerpt: Thomas Aeschi is a Swiss businessman, politician and former banker.\n   Source: https://en.wikipedia.org/wiki/Thomas_Aeschi (sha256:9900599140237240)\n3. [NEUTRAL_CONTEXT | conf=0.14 | fetched 2026-11-26T14:09:33Z] Schweizer Parlament - Startseite\n   Excerpt: Ratsmitglieder seit 1848\n   Source: https://www.parlament.ch/de (sha256:2fb82bc31682060b)",
+  "submission_links": [
+    "https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election",
+    "https://en.wikipedia.org/wiki/Thomas_Aeschi"
+  ],
+  "submission_payload_valid": true,
+  "dry_run_submission": {
+    "marketAddress": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+    "note": "Market: Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?\nAssessment: NEUTRAL_CONTEXT | Prior YES=51.5% -> Implied YES=51.5% (Corroboration=0.00, Contradiction=0.00)\n\nDated Verifiable Evidence:\n1. [NEUTRAL_CONTEXT | conf=0.27 | 2026-11-25T19:42:38Z] 2026 Swiss Federal Council election\n   Excerpt: The announcement of President Guy Parmelin's resignation from the Federal Council on 2 October, effective on 31 December, triggered a by-election that will take place on 9 December 2026.\n   Source: https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election (sha256:5a0a3ff9abdc8689)\n2. [NEUTRAL_CONTEXT | conf=0.18 | 2026-11-22T21:20:12Z] Thomas Aeschi\n   Excerpt: Thomas Aeschi is a Swiss businessman, politician and former banker.\n   Source: https://en.wikipedia.org/wiki/Thomas_Aeschi (sha256:9900599140237240)\n3. [NEUTRAL_CONTEXT | conf=0.14 | fetched 2026-11-26T14:09:33Z] Schweizer Parlament - Startseite\n   Excerpt: Ratsmitglieder seit 1848\n   Source: https://www.parlament.ch/de (sha256:2fb82bc31682060b)",
+    "links": [
+      "https://en.wikipedia.org/wiki/2026_Swiss_Federal_Council_election",
+      "https://en.wikipedia.org/wiki/Thomas_Aeschi"
+    ],
+    "files": [],
+    "item_count": 3
+  }
+}

@@ -1,0 +1,213 @@
+[
+  {
+    "address": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+    "question": "Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?",
+    "delphi_url": "https://delphi.fyi/market/2f39d046-6fe9-4413-ae69-c163943d721f",
+    "category": "controls",
+    "category_label": "Macro and rates",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.500191,
+      "no": 0.499809
+    },
+    "closes_at": "2026-12-04T12:30:00.000Z",
+    "evidence_cutoff_at": "2026-12-03T12:30:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes, +90,000 or more\": Wins if the BLS Employment Situation news release for November 2026, published strictly after 2026-11-24T09:10:01.801Z and at or before 2026-12-04T20:30:00.000Z, reports a first-print total nonfarm payroll (NFP) change of +90,000 or greater.\n- \"No, below +90,000\": Wins if the BLS Employment Situation news release for November 2026, published strictly after 2026-11-24T09:10:01.801Z and at or before 2026-12-04T20:30:00.000Z, reports a first-print total nonfarm payroll (NFP) change of less than +90,000 (including any negative or zero figure).\n\nClarifications:\n- The NFP figure used is the total nonfarm payroll employment change as stated in the initial (\"first-print\") release of the November 2026 Employment Situation report; subsequent revisions to this figure are not considered.",
+    "data_sources": [
+      "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "https://www.bls.gov/bls/news-release/empsit.htm"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0x55224cfb33522244ac64f969e5a38a5d4413fc23",
+    "question": "Will Japan's ESRI second preliminary Jul-Sep 2026 real GDP (released 2026-12-08 08:50 JST) show q/q annualized growth \u2265 0.0% (seasonally adjusted)?",
+    "delphi_url": "https://delphi.fyi/market/d06344de-e853-4fff-b9a4-f311b21f9be6",
+    "category": "local_language",
+    "category_label": "Local-language sources",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.490848,
+      "no": 0.509152
+    },
+    "closes_at": "2026-12-07T12:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-06T12:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes, \u2265 0.0% annualized\": Wins if the Japan ESRI second preliminary GDP estimate for July\u2013September 2026, published strictly after 2026-11-24T09:41:22.780Z and at or before 2026-12-08T02:00:00Z, reports a quarter-on-quarter annualized real GDP growth rate (seasonally adjusted) of 0.0% or above.\n- \"No, below 0.0% annualized\": Wins if the Japan ESRI second preliminary GDP estimate for July\u2013September 2026, published strictly after 2026-11-24T09:41:22.780Z and at or before 2026-12-08T02:00:00Z, reports a quarter-on-quarter annualized real GDP growth rate (seasonally adjusted) below 0.0%.\n\nClarifications:\n- The measured figure is the seasonally adjusted, annualized quarter-on-quarter real GDP growth rate from the \"Quarterly Estimates of GDP for Jul.\u2013Sep. 2026 (The Second Preliminary Estimates)\" release by Japan's Cabinet Office Economic and Social Research Institute (ESRI), scheduled for 2026-12-08 at 08:50 JST (2026-12-07T23:50:00Z). The settlement window's upper bound of 2026-12-08T02:00:00Z is after this scheduled release time.\n\nCorrected Nov 26, 2026: the end of the settlement window was moved from 2026-12-07T20:00:00Z to 2026-12-08T02:00:00Z so that it covers the time the official result is published. The on-chain metadata keeps the original text.",
+    "data_sources": [
+      "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/toukei_2026.html",
+      "https://www.esri.cao.go.jp/en/news/index.html"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0xfdac0b329c1eeccb338d7acc0ec4b537dcfc58c2",
+    "question": "Will Thomas Aeschi (SVP) be elected to the Swiss Federal Council by the Federal Assembly on Dec 9, 2026, succeeding Guy Parmelin, per parlament.ch?",
+    "delphi_url": "https://delphi.fyi/market/a47fa3b7-d426-49c8-af9a-2a1bd70a5bf1",
+    "category": "votes_government",
+    "category_label": "Votes and government",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.515014,
+      "no": 0.484986
+    },
+    "closes_at": "2026-12-09T05:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-08T05:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes\": Wins if Thomas Aeschi (SVP) is confirmed as elected to the Swiss Federal Council by the Federal Assembly, succeeding Guy Parmelin, in the election held on December 9, 2026, with the result announced strictly after 2026-11-24T09:57:51.224Z and at or before 2026-12-09T13:00:00.000Z.\n- \"No\": Wins if the Federal Assembly holds its Federal Council election on December 9, 2026, within the same window, and Thomas Aeschi is not elected to the seat vacated by Guy Parmelin.\n\nClarifications:\n- The election session in question is the Federal Assembly's by-election on December 9, 2026, to fill the seat vacated by Guy Parmelin's departure from the Federal Council. Election results are determined by the official vote count announced by the Federal Assembly on that date.",
+    "data_sources": [
+      "https://www.parlament.ch",
+      "https://www.bk.admin.ch",
+      "https://www.reuters.com"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0x94dbba7c9b44b788a701602ab6d919ff7b7fc38a",
+    "question": "Will turnout in Switzerland's federal vote of Nov 29, 2026 be at least 50.0%, per the Federal Chancellery?",
+    "delphi_url": "https://delphi.fyi/market/79ad7f1c-eb5c-48ed-b1cc-203f95d062f5",
+    "category": "votes_government",
+    "category_label": "Votes and government",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.516056,
+      "no": 0.483944
+    },
+    "closes_at": "2026-11-29T06:00:00.000Z",
+    "evidence_cutoff_at": "2026-11-28T06:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes, \u226550.0%\": Wins if the Federal Chancellery's official turnout figure for Switzerland's federal vote of November 29, 2026, published strictly after 2026-11-24T09:06:27.769Z and at or before 2026-11-29T19:00:00.000Z, is 50.0% or higher.\n- \"No, <50.0%\": Wins if the Federal Chancellery's official turnout figure for Switzerland's federal vote of November 29, 2026, published strictly after 2026-11-24T09:06:27.769Z and at or before 2026-11-29T19:00:00.000Z, is below 50.0%.\n\nClarifications:\n- Turnout is defined as the percentage of registered voters who cast a valid or blank ballot, as reported in the Federal Chancellery's official results for the November 29, 2026 federal vote. If the Federal Chancellery releases only a preliminary turnout figure within the window, that figure is used; if no figure is published within the window, the market is unresolvable.\n\nCorrected Nov 26, 2026: the end of the settlement window was moved from 2026-11-29T14:00:00.000Z to 2026-11-29T19:00:00.000Z so that it covers the time the official result is published. The on-chain metadata keeps the original text.",
+    "data_sources": [
+      "https://www.bk.admin.ch",
+      "https://opendata.swiss"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0x2b7c2f3fc81678be6b7bae7ac24cf5f99b6e0326",
+    "question": "Will the German Bundestag pass the Pflegeneuordnungsgesetz (PNOG, BT-Drs. 21/8869) in its final third-reading vote by Dec 11, 2026, per bundestag.de?",
+    "delphi_url": "https://delphi.fyi/market/32c59a7b-f917-498f-834d-8f4061625107",
+    "category": "votes_government",
+    "category_label": "Votes and government",
+    "market_tier": "B",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.51611,
+      "no": 0.48389
+    },
+    "closes_at": "2026-12-11T06:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-10T06:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes\": Wins if the German Bundestag holds a third-reading (3. Lesung) plenary vote on the Pflegeneuordnungsgesetz (PNOG, BT-Drs. 21/8869) strictly after 2026-11-24T09:54:30.470Z and at or before 2026-12-11T22:00:00.000Z, and the bill is adopted by a majority of votes cast, as confirmed by the official plenary record (Plenarprotokoll) or the legislative tracking entry (Beratungsvorgang) published on bundestag.de.\n- \"No\": Wins if no such third-reading vote adopting the bill is recorded on bundestag.de within that same window \u2014 including if the vote was held but the bill was rejected, or if no third-reading vote took place at all by 2026-12-11T22:00:00.000Z.\n\nClarifications:\n- \"Adopted\" means the Bundestag approved the bill in its final third reading (3. Lesung) with a majority of valid votes cast, as reflected in the official Plenarprotokoll or the DIP Beratungsvorgang for BT-Drs. 21/8869 on bundestag.de. A referral back to committee or a failed vote does not satisfy this condition.\n\nCorrected Nov 26, 2026: the end of the settlement window was moved from 2026-12-11T14:00:00.000Z to 2026-12-11T22:00:00.000Z so that it covers the time the official result is published. The on-chain metadata keeps the original text.",
+    "data_sources": [
+      "https://dip.bundestag.de",
+      "https://www.bundestag.de/dokumente/protokolle",
+      "https://www.bundestag.de/dokumente/parlamentsdokumentation"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0x55b0fabfcdf6125415854cc193ecd8cdc75bc382",
+    "question": "Will Vox win \u226560 of 350 Congress seats in Spain's Nov 29, 2026 general election, per Interior Ministry provisional results?",
+    "delphi_url": "https://delphi.fyi/market/e11f656b-3ba0-4e84-aef4-8611397c6434",
+    "category": "local_language",
+    "category_label": "Local-language sources",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.482591,
+      "no": 0.517409
+    },
+    "closes_at": "2026-11-29T06:00:00.000Z",
+    "evidence_cutoff_at": "2026-11-28T06:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes, \u226560 seats\": Wins if Vox is credited with 60 or more seats in the Congress of Deputies in the Spanish Interior Ministry's provisional results for the November 29, 2026 general election, published strictly after 2026-11-24T09:17:34.169Z and at or before 2026-11-30T01:00:00.000Z.\n- \"No, <60 seats\": Wins if Vox is credited with fewer than 60 seats in the Congress of Deputies in the Spanish Interior Ministry's provisional results for the November 29, 2026 general election, published strictly after 2026-11-24T09:17:34.169Z and at or before 2026-11-30T01:00:00.000Z.\n\nClarifications:\n- The seat count used is the Vox total shown in the Interior Ministry's provisional count (escrutinio provisional) at the time of settlement, not the later official count (escrutinio general) published by the Central Electoral Board.\n- If the Ministry's provisional results have not been published, or Vox's seat total is not yet reported, by 2026-11-30T01:00:00.000Z, neither outcome's condition is met within the settlement window.\n\nCorrected Nov 26, 2026: the end of the settlement window was moved from 2026-11-29T14:00:00.000Z to 2026-11-30T01:00:00.000Z so that it covers the time the official result is published. The on-chain metadata keeps the original text.",
+    "data_sources": [
+      "https://infoelectoral.interior.gob.es/en/inicio",
+      "https://www.reuters.com",
+      "https://apnews.com"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0xa96dc716066329d666f3c50e6d8f71c701347296",
+    "question": "Will \"Yi-Chia Chen @ Fields Model\" rank 1st on the ARC-AGI-3 Kaggle final private leaderboard (ARC Prize 2026), announced Dec 4, 2026?",
+    "delphi_url": "https://delphi.fyi/market/ab31b917-9289-4a1c-be25-978581b8a97a",
+    "category": "niche_communities",
+    "category_label": "Niche communities",
+    "market_tier": "B",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.478648,
+      "no": 0.521352
+    },
+    "closes_at": "2026-12-03T18:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-02T18:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes\": Wins if the ARC Prize 2026 final private leaderboard for the ARC-AGI-3 Kaggle competition, published strictly after 2026-11-24T09:09:23.537Z and at or before 2026-12-04T23:00:00.000Z, shows the team entry named \"Yi-Chia Chen @ Fields Model\" ranked 1st.\n- \"No\": Wins if the ARC Prize 2026 final private leaderboard for the ARC-AGI-3 Kaggle competition, published strictly after 2026-11-24T09:09:23.537Z and at or before 2026-12-04T23:00:00.000Z, shows any team other than \"Yi-Chia Chen @ Fields Model\" ranked 1st.\n\nClarifications:\n- The final private leaderboard is the definitive ranking used to determine winners per competition rules; the public leaderboard is not used for settlement. If a team is disqualified after initially ranking 1st, the next eligible team at rank 1 is used.\n\nCorrected Nov 26, 2026: the end of the settlement window was moved from 2026-12-04T02:00:00.000Z to 2026-12-04T23:00:00.000Z so that it covers the time the official result is published. The on-chain metadata keeps the original text.",
+    "data_sources": [
+      "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/leaderboard",
+      "https://arcprize.org/competitions/2026"
+    ],
+    "settled": null
+  },
+  {
+    "address": "0xecace7b63b2e044dd339e7512cf4360713a8e156",
+    "question": "Will Swiss FSO report Nov 2026 CPI YoY inflation \u22651.6% in its Dec 2 release?",
+    "delphi_url": "https://delphi.fyi/market/18ad479a-3d92-43e0-8951-6f61085d6fb8",
+    "category": "official_statistics",
+    "category_label": "Official statistics",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.477553,
+      "no": 0.522447
+    },
+    "closes_at": "2026-12-02T07:00:00.000Z",
+    "evidence_cutoff_at": "2026-12-01T07:00:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes\": Wins if the Swiss Federal Statistical Office (FSO) December 2, 2026 press release, published strictly after 2026-11-24T09:07:58.326Z and at or before 2026-12-02T15:00:00.000Z, reports a November 2026 CPI year-on-year (YoY) inflation figure of 1.6% or higher.\n- \"No\": Wins if the Swiss Federal Statistical Office (FSO) December 2, 2026 press release, published strictly after 2026-11-24T09:07:58.326Z and at or before 2026-12-02T15:00:00.000Z, reports a November 2026 CPI year-on-year (YoY) inflation figure below 1.6%.\n\nClarifications:\n- The YoY inflation figure is the percentage change in the Swiss National Consumer Price Index for November 2026 compared with November 2025, as stated in the FSO's official press release for that month.",
+    "data_sources": [
+      "https://www.bfs.admin.ch/bfs/en/home/statistics/prices/consumer-price-index.html",
+      "https://www.bfs.admin.ch/en/press-releases"
+    ],
+    "settled": null
+  }
+]

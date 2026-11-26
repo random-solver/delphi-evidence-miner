@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-11-26T14:09:17Z",
+  "market": {
+    "address": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+    "question": "Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?",
+    "delphi_url": "https://delphi.fyi/market/2f39d046-6fe9-4413-ae69-c163943d721f",
+    "category": "controls",
+    "category_label": "Macro and rates",
+    "market_tier": "A",
+    "wave": 1,
+    "status": "open",
+    "odds": {
+      "yes": 0.500191,
+      "no": 0.499809
+    },
+    "closes_at": "2026-12-04T12:30:00.000Z",
+    "evidence_cutoff_at": "2026-12-03T12:30:00.000Z",
+    "pots": {
+      "judgement": "20000000",
+      "settlement": "30000000"
+    },
+    "resolution_criteria": "Resolution criteria:\n- \"Yes, +90,000 or more\": Wins if the BLS Employment Situation news release for November 2026, published strictly after 2026-11-24T09:10:01.801Z and at or before 2026-12-04T20:30:00.000Z, reports a first-print total nonfarm payroll (NFP) change of +90,000 or greater.\n- \"No, below +90,000\": Wins if the BLS Employment Situation news release for November 2026, published strictly after 2026-11-24T09:10:01.801Z and at or before 2026-12-04T20:30:00.000Z, reports a first-print total nonfarm payroll (NFP) change of less than +90,000 (including any negative or zero figure).\n\nClarifications:\n- The NFP figure used is the total nonfarm payroll employment change as stated in the initial (\"first-print\") release of the November 2026 Employment Situation report; subsequent revisions to this figure are not considered.",
+    "data_sources": [
+      "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "https://www.bls.gov/bls/news-release/empsit.htm"
+    ],
+    "settled": null
+  },
+  "decomposition": {
+    "market_address": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+    "question": "Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?",
+    "entities": [
+      "BLS Employment Situation",
+      "NFP",
+      "BLS"
+    ],
+    "thresholds": [],
+    "window_start": "2026-11-24T09:10:01.801Z",
+    "window_end": "2026-12-04T20:30:00.000Z",
+    "evidence_cutoff_at": "2026-12-03T12:30:00.000Z",
+    "sub_claims": [
+      {
+        "claim_id": "C1-primary-outcome",
+        "predicate": "Primary outcome verification: determine whether evidence indicates YES or NO for 'Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?' (thresholds: binary outcome condition).",
+        "claim_type": "primary_outcome",
+        "target_entities": [
+          "BLS Employment Situation",
+          "NFP",
+          "BLS"
+        ],
+        "keywords": [
+          "bls",
+          "employment",
+          "situation",
+          "nfp",
+          "first-print",
+          "change"
+        ],
+        "target_domains": [
+          "bls.gov"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C2-official-source",
+        "predicate": "Designated resolution source check across ['bls.gov'] for official notices/releases inside window [2026-11-24T09:10:01.801Z .. 2026-12-04T20:30:00.000Z].",
+        "claim_type": "official_source_check",
+        "target_entities": [
+          "BLS Employment Situation",
+          "NFP",
+          "BLS"
+        ],
+        "keywords": [
+          "bls",
+          "employment",
+          "situation",
+          "nfp",
+          "first-print",
+          "change",
+          "official",
+          "press",
+          "release",
+          "result"
+        ],
+        "target_domains": [
+          "bls.gov"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C3-leading-indicator",
+        "predicate": "Leading indicator / pre-release check: polls, regional/preliminary prints, ballot/tracker status, standings, or technical commits tied to BLS Employment Situation, NFP, BLS.",
+        "claim_type": "leading_indicator",
+        "target_entities": [
+          "BLS Employment Situation",
+          "NFP",
+          "BLS"
+        ],
+        "keywords": [
+          "bls",
+          "employment",
+          "situation",
+          "nfp",
+          "first-print",
+          "change",
+          "preliminary",
+          "poll",
+          "estimate",
+          "forecast",
+          "update"
+        ],
+        "target_domains": [
+          "bls.gov"
+        ],
+        "expected_direction": "binary"
+      },
+      {
+        "claim_id": "C4-criteria-edge-guard",
+        "predicate": "Resolution criteria edge-case guard: verify exact metric definition (preliminary vs final, valid+blank ballots, single vs double majority, UTC cutoff).",
+        "claim_type": "edge_guard",
+        "target_entities": [
+          "BLS Employment Situation",
+          "NFP",
+          "BLS"
+        ],
+        "keywords": [
+          "bls",
+          "employment",
+          "situation",
+          "nfp",
+          "first-print"
+        ],
+        "target_domains": [
+          "bls.gov"
+        ],
+        "expected_direction": "neutral"
+      }
+    ],
+    "suggested_queries": [
+      "BLS Employment Situation NFP BLS",
+      "bls employment situation nfp"
+    ],
+    "target_domains": [
+      "bls.gov"
+    ]
+  },
+  "corroboration": {
+    "market_address": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+    "prior_yes_odds": 0.500191,
+    "implied_yes_probability": 0.500191,
+    "delta_from_market": 0.0,
+    "recommended_stance": "NEUTRAL_CONTEXT",
+    "corroboration_score": 0.0,
+    "contradiction_index": 0.0,
+    "supporting_yes_weight": 0.0,
+    "supporting_no_weight": 0.0,
+    "neutral_weight": 0.0,
+    "distinct_domains_count": 0,
+    "total_signals": 1,
+    "passes_submission_threshold": false,
+    "assessment_summary": "Fetched 1 signal(s) across 0 domain(s); no decisive directional shift over market baseline yet."
+  },
+  "signals": [
+    {
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/Nonfarm_payrolls",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "title": "Nonfarm payrolls",
+      "published_at": "2026-11-03T01:40:34Z",
+      "fetched_at": "2026-11-26T14:09:15Z",
+      "content_sha256": "f9f4df59defcd0fc6cc5b819c60dddf63db71e7640b97381d8000d7630107338",
+      "stance": "NEUTRAL_CONTEXT",
+      "relevance_score": 0.1,
+      "authority_weight": 0.75,
+      "recency_score": 0.55,
+      "confidence": 0.0165,
+      "matched_terms": [
+        "employment"
+      ],
+      "extracted_numbers": [],
+      "excerpt": "Nonfarm payroll employment is a compiled name for goods, construction and manufacturing companies in the US.",
+      "rationale": "Low term overlap with market entities/keywords."
+    }
+  ],
+  "provenance_records": [
+    {
+      "record_id": 1,
+      "market_address": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+      "claim_id": "C3-leading-indicator",
+      "source_url": "https://en.wikipedia.org/wiki/Nonfarm_payrolls",
+      "domain": "en.wikipedia.org",
+      "source_type": "wikipedia",
+      "http_status": 200,
+      "content_sha256": "f9f4df59defcd0fc6cc5b819c60dddf63db71e7640b97381d8000d7630107338",
+      "published_at": "2026-11-03T01:40:34Z",
+      "fetched_at": "2026-11-26T14:09:15Z",
+      "stance": "NEUTRAL_CONTEXT",
+      "confidence": 0.0165,
+      "excerpt": "Nonfarm payroll employment is a compiled name for goods, construction and manufacturing companies in the US.",
+      "record_hash": "c20a39c3c93300be4eda4e3cdac40b0c610d08960a620ce359a64567590905ae"
+    }
+  ],
+  "submission_note": "Market: Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?\nAssessment: NEUTRAL_CONTEXT | Prior YES=50.0% -> Implied YES=50.0% (Corroboration=0.00, Contradiction=0.00)\n\nDated Verifiable Evidence:",
+  "submission_links": [],
+  "submission_payload_valid": true,
+  "dry_run_submission": {
+    "marketAddress": "0x6d14f2291c886a3469e988a7f80d307802a40c0a",
+    "note": "Market: Will the BLS Employment Situation for Nov 2026 (Dec 4) report a first-print NFP change of +90,000 or more?\nAssessment: NEUTRAL_CONTEXT | Prior YES=50.0% -> Implied YES=50.0% (Corroboration=0.00, Contradiction=0.00)\n\nDated Verifiable Evidence:",
+    "links": [],
+    "files": [],
+    "item_count": 1
+  }
+}
